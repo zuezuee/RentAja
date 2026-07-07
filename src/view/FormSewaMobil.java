@@ -64,7 +64,7 @@ public class FormSewaMobil extends JFrame {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
                 if (value instanceof Mobil) {
                     Mobil m = (Mobil) value;
-                    setText(m.getIdMobil() + " - " + m.getMerk() + " " + m.getModel());
+                    setText(m.getIdMobil() + " - " + m.getMerk() + " " + m.getTipe());
                 }
                 return this;
             }

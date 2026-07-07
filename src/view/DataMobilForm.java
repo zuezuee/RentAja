@@ -24,7 +24,7 @@ public class DataMobilForm extends JFrame {
     private MobilDAO mobilDAO;
 
     private final String[] kolom = {
-            "ID Mobil", "Merk", "Model", "Tahun", "Harga Sewa/Hari", "Status"
+            "ID Mobil", "Merk", "Tipe", "Tahun", "Harga Sewa/Hari", "Status"
     };
 
     public DataMobilForm() {
@@ -74,7 +74,7 @@ public class DataMobilForm extends JFrame {
             tableModel.addRow(new Object[]{
                     m.getIdMobil(),
                     m.getMerk(),
-                    m.getModel(),
+                    m.getTipe(),
                     m.getTahun(),
                     m.getHargaSewa(),
                     m.getStatus()
