@@ -16,6 +16,9 @@ public class Mobil extends Kendaraan {
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
+    // Alias getter biar sinkron sama pemanggilan di view (DataMobilForm, FormSewaMobil)
+    public String getIdMobil() { return id; }
+
     // Polymorphism: override method dari parent
     @Override
     public double hitungBiaya(int lamaSewa) {

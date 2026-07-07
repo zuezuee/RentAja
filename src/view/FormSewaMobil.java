@@ -162,7 +162,7 @@ public class FormSewaMobil extends JFrame {
                     idTransaksi,
                     mobilTerpilih.getIdMobil(),
                     customerTerpilih.getIdCustomer(),
-                    tglSewa,
+                    tglSewa.toLocalDate(),
                     lamaSewa
             );
 

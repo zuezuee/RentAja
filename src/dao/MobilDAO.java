@@ -1,12 +1,9 @@
 package dao;
-
 import model.Mobil;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
 public class MobilDAO {
-
     public List<Mobil> getAllMobil() {
         List<Mobil> list = new ArrayList<>();
         String sql = "SELECT * FROM mobil";
